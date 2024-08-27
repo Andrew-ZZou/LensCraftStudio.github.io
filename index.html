@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+	<header>
+		<meta charest = "utf-8">
+		<title>LensCraft Studio</title>
+		<link href = "css/stylesheet.css" rel="stylesheet">
+		<a href="index.html"><img src ="images/logo1.png"style = "width:15%","height:15%"/></a>
+		<ul class ="topnav">
+			<a href="index.html" title="LensCraft studio home page">Home</a>
+			<a href="about.html" title="LensCraft studio about us page">About</a>
+			<a href="service.html" title="LensCraft studio service and price page">Services</a>
+			<a href="booking.html" title="LensCraft studio booking and enquire page">Booking</a>
+			<a href="blog.html" title="LensCraft studio blog page">Blog</a>
+		</ul>
+		<div class="frontier">
+			
+		</div>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+	</header>
+	
+	<body>
+			
+			<div class = "introduction">
+				<div class="content-wrap">
+			
+				<h1>LensCraft Studio</h1>
+				<p> We are a boutique photography studio located at Cuba street in Wellington<br> 
+					known for its artistic approach to capturing special moments.<br>  
+					We offer a range of photography services,<br> 
+					including portrait sessions, wedding photography, and commercial shoots.</p>
+				<div class="homebooknow">
+					<a href="booking.html" title="booking for service">Book Now</a>
+				</div>
+				
+				<img src ="images/pexels-harrisonhaines-3800848.jpg"/>
+				</div>
+			</div>
+		
+		<!--slide show for studio Portfolio-->
+
+
+		<h2 style="text-align:center">Our Portfolio</h2>
+		
+		<div class="slideshow-container">
+
+			<div class="mySlides">  
+				<img src="images/Wedding1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">	  
+				<img src="images/Wedding2.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+				<img src="images/Wedding3.jpg" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+			  <img src="images/family1.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+			  <img src="images/family2.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+			  <img src="images/family3.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+			  <img src="images/commercial1.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+			  <img src="images/commercial2.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+			  <img src="images/commercial3.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)" style = right:0px>❯</a>
+
+			</div>
+
+		<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>	
+		
+		
+	
+	</body>
+	
+	<footer>
+	
+	<a href="index.html"><img src ="images/logo1.png"style = "width:15%","height:15%"/></a>
+	<div class = "socialmedia">
+		<a href="http://www.facebook.com"><img src ="images/facebook.png" alt="LensCraft Studio facebook channel"></a>
+		<a href="http://www.instagram.com"><img src ="images/instagram.png"alt="LensCraft Studio instagram channel"></a>
+		<a href="http://www.youtube.com"><img src ="images/youtube.png"alt="LensCraft Studio youtube channel"></a>
+	</div>
+	
+		<ul class ="bottomnav">
+			<li><a href="index.html" title="LensCraft studio home page">Home</a></li>
+			<li><a href="about.html" title="LensCraft studio about us page">About</a></li>
+			<li><a href="service.html" title="LensCraft studio service and price page">Services</a></li>
+			<li><a href="booking.html" title="LensCraft studio booking and enquire page">Booking</a></li>
+			<li><a href="blog.html" title="LensCraft studio blog page">Blog</a>
+		</ul>
+		<p>Copyright 2024 LensCraft studio</p>
+	
+	</footer>
+
+
+
+</html>
